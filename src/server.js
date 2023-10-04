@@ -26,8 +26,8 @@ mongoose.connect('mongodb+srv://jayandratodawat:tryhack45@cluster0.bizbrgw.mongo
 
 })
 
+const PORT = process.env.PORT || 5000
 
-
-app.listen(5000, function () {
-    console.log('This is Server on port 5000');
+app.listen(PORT, function () {
+    console.log('This is Server on port : ' + `${PORT}`);
 });
